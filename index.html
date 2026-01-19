@@ -55,6 +55,66 @@
             .hero { flex-direction: column; text-align: center; }
             .main-header { flex-direction: column; }
         }
+
+        .site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Makes it mobile friendly */
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.event-btn {
+    background-color: #00d4ff;
+    border: none;
+    padding: 10px 15px;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
     </style>
 </head>
 <body>
@@ -175,5 +235,37 @@
             </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Upcoming Event</h3>
+            <p><strong>Tech Conference 2026</strong></p>
+            <p>Date: October 15-17, 2026</p>
+            <button class="event-btn">Register Now</button>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: hello@yourdomain.com</p>
+            <p>Phone: +1 (555) 000-1234</p>
+            <p>Location: 123 Digital Ave, New York, NY</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Your Name/Brand. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
