@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রয়োজনে - কেনাকাটা | Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; color: #5a5a5a; background: #fff; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 15px; }
+        
+        /* Top Header */
+        .top-header { background: #f4f4f4; padding: 10px 0; font-size: 12px; border-bottom: 1px solid #ddd; }
+        .top-header span { margin-right: 15px; cursor: pointer; }
+
+        /* Main Header */
+        .main-header { padding: 30px 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 35px; font-weight: bold; color: #5a5a5a; text-transform: uppercase; }
+        .logo span { color: #5a92e0; }
+        .cart-info { border: 1px solid #ddd; padding: 10px 20px; border-radius: 5px; color: #5a92e0; font-weight: bold; }
+
+        /* Navigation */
+        nav { background: #5a92e0; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; }
+        nav ul li a { color: white; padding: 15px 20px; text-decoration: none; display: block; text-transform: uppercase; font-size: 14px; }
+        nav ul li a:hover { background: #4a82d0; }
+
+        /* Hero / Slider Section */
+        .hero { background: #fbfbfb; padding: 60px 0; display: flex; align-items: center; justify-content: space-around; }
+        .hero-text h2 { font-size: 40px; margin-bottom: 10px; }
+        .hero-text span { color: #5a92e0; }
+        .hero-img img { max-width: 350px; }
+
+        /* Promo Boxes */
+        .promo-area { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: -20px; }
+        .promo-box { padding: 40px 20px; text-align: center; color: white; }
+        .promo-1 { background: #5a92e0; } /* Blue */
+        .promo-2 { background: #ffd900; } /* Yellow */
+        .promo-3 { background: #fa8072; } /* Coral */
+        .promo-4 { background: #40c4ff; } /* Light Blue */
+
+        /* Products Section */
+        .products-title { text-align: center; margin: 50px 0; font-size: 30px; color: #333; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .product-card { border: 1px solid #eee; padding: 20px; text-align: center; transition: 0.3s; }
+        .product-card:hover { border-color: #5a92e0; }
+        .product-card img { max-width: 100%; height: auto; margin-bottom: 15px; }
+        .product-card h3 { font-size: 16px; margin: 10px 0; height: 40px; overflow: hidden; }
+        .product-price { color: #5a92e0; font-weight: bold; font-size: 18px; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 14px; margin-left: 10px; }
+
+        @media (max-width: 768px) {
+            .promo-area { grid-template-columns: repeat(2, 1fr); }
+            .hero { flex-direction: column; text-align: center; }
+            .main-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-header">
+        <div class="container">
+            <span>👤 My Account</span> <span>❤ Wishlist</span> <span>🛒 My Cart</span> <span>✔ Checkout</span>
+        </div>
+    </div>
+
+    <header class="main-header container">
+        <div class="logo"><span>u</span>stora</div>
+        <div class="cart-info">CART - $100 🛒</div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop Page</a></li>
+                <li><a href="#">Single Product</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero container">
+        <div class="hero-img">
+            <img src="https://i.imgur.com/8pS6DAn.png" alt="Headphones"> </div>
+        <div class="hero-text">
+            <h2>Apple <span>Store Ipod</span></h2>
+            <p>& Phone</p>
+            <button style="background:#5a92e0; color:white; border:none; padding:10px 25px; cursor:pointer;">SHOP NOW</button>
+        </div>
+    </section>
+
+    <div class="promo-area container">
+        <div class="promo-box promo-1">🔄 30 Days Return</div>
+        <div class="promo-box promo-2">🚚 Free Shipping</div>
+        <div class="promo-box promo-3">🔒 Secure Payments</div>
+        <div class="promo-box promo-4">🎁 New Products</div>
+    </div>
+
+    <div class="container">
+        <h2 class="products-title">Latest Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x250" alt="Phone">
+                <h3>Samsung Galaxy S5</h3>
+                <div class="product-price">$700.00 <span class="old-price">$900.00</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x250" alt="Phone">
+                <h3>Nokia Lumia 1320</h3>
+                <div class="product-price">$899.00 <span class="old-price">$999.00</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x250" alt="Phone">
+                <h3>LG Leon 2015</h3>
+                <div class="product-price">$400.00</div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x250" alt="Phone">
+                <h3>Sony Microsoft</h3>
+                <div class="product-price">$300.00</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
